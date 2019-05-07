@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dmitry Prokopenkov](https://up.htmlacademy.ru/htmlcss/25/user/937051).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Сёмин](https://htmlacademy.ru/profile/id39368).
 
 ---
 
