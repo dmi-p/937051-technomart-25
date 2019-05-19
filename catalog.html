@@ -9,7 +9,7 @@
 <body>
   <header class="main-header" style="background-color: #f3f7f9">
     <div class="user-navigation" style="background-color: #293449">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/index-logo.png" alt="Company logo">
       </a>
       <form action="/echo" method="post">
@@ -39,7 +39,7 @@
     </div>
     <nav class="header-navigation" style="background-color: #32425c">
       <ul class="site-navigation">
-        <li><a>Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Новости</a></li>
@@ -51,7 +51,7 @@
   </header>
   <main class="container">
     <ul class="breadcrumbs">
-      <li class="breadcrumbs-home"><a href="#"><img src="img/icon-home.svg"></a></li>
+      <li class="breadcrumbs-home"><a href="index.html"><img src="img/icon-home.svg"></a></li>
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Инструмент</a></li>
       <li><a href="#">Перфораторы</a></li>
@@ -135,7 +135,7 @@
           <div class="item-inactive">
             <img src="img/Perforator_1.jpg" alt="Bosch bfg 3000">
           </div>
-          <h3>Перфоратор Bosch bfg 3000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 3000</a></h3>
           <div class="discount">
             <span>22500 Р.</span>
           </div>
@@ -151,7 +151,7 @@
           <div class="item-inactive">
             <img src="img/Perforator_2.jpg" alt="Bosch bfg 6000">
           </div>
-          <h3>Перфоратор Bosch bfg 6000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 6000</a></h3>
           <div class="discount">
             <span>30500 Р.</span>
           </div>
@@ -168,7 +168,7 @@
           <div class="item-inactive">
             <img src="img/Perforator_3.jpg" alt="Bosch bfg 2000">
           </div>
-          <h3>Перфоратор Bosch bfg 2000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 2000</a></h3>
           <div class="cost">
             12500 Р.
           </div>
@@ -181,7 +181,7 @@
           <div class="item-inactive">
             <img src="img/Perforator_1.jpg" alt="Bosch bfg 3000">
           </div>
-          <h3>Перфоратор Bosch bfg 3000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 3000</a></h3>
           <div class="discount">
             <span>22500 Р.</span>
           </div>
@@ -198,7 +198,7 @@
           <div class="item-inactive">
               <img src="img/Perforator_2.jpg" alt="Bosch bfg 6000">
           </div>
-          <h3>Перфоратор Bosch bfg 6000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 6000</a></h3>
           <div class="discount">
             <span>30500 Р.</span>
           </div>
@@ -214,7 +214,7 @@
           <div class="item-inactive">
               <img src="img/Perforator_3.jpg" alt="Bosch bfg 2000">
           </div>
-          <h3>Перфоратор Bosch bfg 2000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 2000</a></h3>
           <div class="cost">
             12500 Р.
           </div>
@@ -228,7 +228,7 @@
           <div class="item-inactive">
               <img src="img/Perforator_1.jpg" alt="Bosch bfg 3000">
           </div>
-          <h3>Перфоратор Bosch bfg 3000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 3000</a></h3>
           <div class="discount">
             <span>22500 Р.</span>
           </div>
@@ -244,7 +244,7 @@
           <div class="item-inactive">
               <img src="img/Perforator_2.jpg" alt="Bosch bfg 6000">
           </div>
-          <h3>Перфоратор Bosch bfg 6000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 6000</a></h3>
           <div class="discount">
             <span>30500 Р.</span>
           </div>
@@ -260,7 +260,7 @@
           <div class="item-inactive">
               <img src="img/Perforator_3.jpg" alt="Bosch bfg 2000">
           </div>
-          <h3>Перфоратор Bosch bfg 2000</h3>
+          <h3><a href="#">Перфоратор Bosch bfg 2000</a></h3>
           <div class="cost">
             12500 Р.
           </div>
@@ -271,7 +271,7 @@
   <footer class="main-footer">
     <div class="footer-complex" style="background-color: #32425c">
       <p>
-          <a href="#" class="footer-logo"><img src="img/footer-logo.png" alt="Логотип компании"></a>
+          <a href="index.html" class="footer-logo"><img src="img/footer-logo.png" alt="Логотип компании"></a>
       </p>
       <p class="footer-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -326,6 +326,21 @@
       <div><span>Продолжить покупки</span></div>
     </a>
     <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Отправить письмо</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label>Ваше имя:<input class="form-name" type="text" name="name" placeholder="Имя Фамилия" required></label>
+      </p>
+      <p>
+        <label>Ваш e-mail:<input class="form-email" type="email" name="email" placeholder="email@example.com" required></label>
+      </p>
+      <p>
+        <label>Текст письма<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме" required></textarea></label>
+      </p>
+      <button type="submit" class="button">Отправить</button>
+    </form>
   </section>
 </body>
 
