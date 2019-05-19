@@ -17,9 +17,9 @@
         <img src="img/icon-search.svg">
         <input type="search" name="main-header-search" id="main-header-search" placeholder="Поиск:">
       </form>
-      <a class="header-bookmark" href=""><img src="img/icon-bookmark.svg">Закладки: 0</a>
-      <a class="header-cart" href=""><img src="img/cart-icon.svg">Корзина: 0</a>
-      <a class="header-checkout" href="">Оформить заказ</a>
+      <a class="header-bookmark" href="#"><img src="img/icon-bookmark.svg">Закладки: 0</a>
+      <a class="header-cart" href="#"><img src="img/cart-icon.svg">Корзина: 0</a>
+      <a class="header-checkout" href="#">Оформить заказ</a>
     </div>
     <div class="main-header-information">
       <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -29,19 +29,19 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
       <div class="header-user-menu">
-        <a href="" class="header-account-entry"><img src="img/icon-login.svg">Войти</a>
-        <a href="" class="header-account-reg">Регистрация</a>
+        <a href="#" class="header-account-entry"><img src="img/icon-login.svg">Войти</a>
+        <a href="#" class="header-account-reg">Регистрация</a>
       </div>
     </div>
     <nav class="header-navigation" style="background-color: #32425c">
       <ul class="site-navigation">
         <li><a>Главная</a></li>
-        <li><a href="">Компания</a></li>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="">Спецпредложения</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -67,7 +67,7 @@
         Вы можете забрать товар сами, заехав в наш офис:
       </p>
       <a href="map.html">
-        <img src="img/map.png" rel="Карта">
+        <img src="img/map.png" alt="Адрес компании г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </a>
       <a class="button" href="feedback.html">Заблудились? Напишите нам!</a>
     </section>
@@ -82,17 +82,17 @@
         +7 (812) 555-05-55
       </p>
       <ul class="footer-complex-list list-first">
-        <li><a href="">Компания</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="footer-complex-list list-second">
-        <li><a href="">Материалы</a></li>
-        <li><a href="">Техника</a></li>
-        <li><a href="">Инструмент</a></li>
-        <li><a href="">Спецпредложения</a></li>
+        <li><a href="#">Материалы</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Спецпредложения</a></li>
       </ul>
     </div>
     <div class="footer-bottom" style="background-color: #293449">
@@ -102,9 +102,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href=""><img src="img/vk-icon.svg">Вконтакте</a></li>
-          <li><a class="social-button" href=""><img src="img/fb-icon.svg">Фейсбук</a></li>
-          <li><a class="social-button" href=""><img src="img/insta-icon.svg">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><img src="img/vk-icon.svg">Вконтакте</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg">Фейсбук</a></li>
+          <li><a class="social-button" href="#"><img src="img/insta-icon.svg">Инстаграм</a></li>
         </ul>
       </div>
       <p>
@@ -117,6 +117,28 @@
       </p>
     </div>
   </footer>
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Отправить письмо</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label>Ваше имя:<input class="form-name" type="text" name="name" placeholder="Имя Фамилия" required></label>
+      </p>
+      <p>
+        <label>Ваш e-mail:<input class="form-email" type="email" name="email" placeholder="email@example.com" required></label>
+      </p>
+      <p>
+        <label>Текст письма<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме" required></textarea></label>
+      </p>
+      <button type="submit" class="button">Отправить</button>
+    </form>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/map-full.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
