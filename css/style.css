@@ -1,0 +1,367 @@
+    body {
+      margin: 0;
+      padding: 0;
+
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000;
+
+      background-color: #fff;
+    }
+
+    .inner-page {}
+
+    a {
+      text-decoration: none;
+    }
+
+    .main-header {
+      background-color: #f3f7f9;
+    }
+
+    .user-navigation {
+      background-color: #293449;
+      font-size: 17px;
+      line-height: 18px;
+    }
+
+    .header-search {
+      background: transparent;
+      border: none;
+    }
+
+    .header-checkout {
+      background-color: #63a63e;
+    }
+
+    .user-navigation a {
+      color: #fff;
+    }
+
+    .modal {
+      display: none;
+    }
+
+    .header-about {
+      color: #ee3643;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px);
+      /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0 !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      overflow: hidden;
+    }
+
+    .contacts {
+      width: 272px;
+      height: 48px;
+      text-align: center;
+      /* vertical-align: middle;??? */
+      border: 3px #fff solid;
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 21px;
+      color: #ee3643;
+    }
+
+    .address {
+      color: #32425c;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .header-account-entry,
+    .header-account-reg {
+      background: #fff;
+      color: #000;
+      font-size: 21px;
+      line-height: 21px;
+      /* padding: 7px; ???*/
+    }
+
+    .site-navigation,
+    .site-navigation a {
+      color: #fff;
+      font-size: 17px;
+      line-height: 17px;
+      list-style: none;
+    }
+
+    /* .site-navigation li {
+    display: inline;
+  } */
+
+    .header-navigation {
+      background: #32425c;
+      border-bottom: solid 5px #293449;
+    }
+
+    .main-about {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .main-about h3 {
+      font-family: "Cuprum", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    .about-description-companies {
+      list-style-image: url(../img/marker-for-li.png);
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .about-description-companies li {
+      margin: 20px;
+    }
+
+    .button {
+      font-family: "Cuprum", Arial, sans-serif;
+      line-height: 18px;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      background: #ee3643;
+      text-align: center;
+      /* padding: 7px;
+    padding-right: 2em;
+    padding-left: 2em;    ???? */
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+
+    .main-contacts h3 {
+      font-family: "Cuprum", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    .main-contacts {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .footer-complex {
+      background-color: #32425c;
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .footer-complex ul {
+      list-style: none;
+    }
+
+    .list-first a,
+    .list-first {
+      color: #f1f5f7;
+    }
+
+    .list-second a,
+    .list-second,
+    .contacts-mail,
+    .contacts-site {
+      color: #ffd180;
+
+    }
+
+    .footer-contacts {
+      color: #f3f7f9;
+    }
+
+    .footer-bottom {
+      background-color: #293449;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 18px;
+      margin: 0;
+    }
+
+    .header-checkout:hover {
+      background-color: #5fbb2d;
+    }
+
+    .header-cart:hover,
+    .header-bookmark:hover,
+    .header-search:hover {
+      background: #212a3a;
+    }
+
+    .header-cart:focus,
+    .header-bookmark:focus {
+      background-color: #161d29;
+    }
+
+    .header-checkout:focus {
+      background-color: #518534;
+    }
+
+    .header-search:focus {
+      background: #fff;
+      color: #000;
+    }
+
+    .header-account-entry:hover,
+    .header-account-reg:hover {
+      color: #ee3643;
+    }
+
+    .header-account-entry:focus,
+    .header-account-reg:focus {
+      opacity: 0.3;
+    }
+
+    .site-navigation a:hover {
+      background: #293449;
+    }
+
+    .site-navigation a:focus {
+      background: #1d2739;
+      opacity: 0.3;
+    }
+
+    .footer-complex-list li:hover,
+    .contacts-mail:hover,
+    .contacts-site:hover {
+      text-decoration: underline;
+    }
+
+    .footer-complex-list li:focus {
+      opacity: 0.5;
+    }
+
+    .contacts-mail:focus,
+    .contacts-site:focus {
+      color: #ee3643;
+    }
+
+    .button:hover {
+      background-color: #ca2c37;
+    }
+
+    .button:focus {
+      background-color: #ba2732;
+    }
+
+    .footer-social ul {
+      list-style: none;
+    }
+
+    .username {
+      background: #fff;
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 21px;
+      width: 300px;
+      height: 45px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .username a {
+      color: #000;
+    }
+
+    .header-account-orders {
+      text-decoration: underline;
+      font-size: 16px;
+      line-height: 18px;
+      color: #32425c;
+    }
+
+    .breadcrumbs {
+      list-style: none;
+    }
+
+    .breadcrumbs a {
+      text-transform: uppercase;
+      line-height: 18px;
+      font-size: 13px;
+      color: #000000;
+      font-family: "PT Sans", Arial, sans-serif;
+    }
+
+    .container h1 {
+      background-color: #f2f6f8;
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    .properties ul,
+    .catalog ul {
+      list-style: none;
+    }
+
+    .catalog-list li {
+      border: 1px solid #e5e5e5;
+      background-color: #ffffff;
+      width: 220px;
+      height: 318px;
+    }
+
+    .producers legend {
+      font-family: "PT Sans", Arial, sans-serif;
+      color: #000000;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .producers li {
+      font-family: "PT Sans", Arial, sans-serif;
+      color: #000000;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    .item-name {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #000000;
+    }
+
+    .discount {
+      color: #999999;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 18px;
+      text-decoration: line-through;
+      text-transform: uppercase;
+    }
+
+    .cost {
+      font-family: "PT Sans", Arial, sans-serif;
+      /* color: #ffffff; */
+      color: #000;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+    }

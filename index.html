@@ -4,36 +4,45 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header" style="background-color: #f3f7f9">
-    <div class="user-navigation" style="background-color: #293449">
+  <header class="main-header">
+    <div class="user-navigation">
       <a class="main-header-logo">
         <img src="img/index-logo.png" alt="Company logo">
       </a>
       <form action="/echo" method="post">
         <label for="main-header-search" class="visually-hidden">Название товара</label>
         <img src="img/icon-search.svg">
-        <input type="search" name="main-header-search" id="main-header-search" placeholder="Поиск:">
+        <input type="search" name="main-header-search" id="main-header-search" class="header-search"
+          placeholder="Поиск:">
       </form>
       <a class="header-bookmark" href="#"><img src="img/icon-bookmark.svg">Закладки: 0</a>
       <a class="header-cart" href="#"><img src="img/cart-icon.svg">Корзина: 0</a>
       <a class="header-checkout" href="#">Оформить заказ</a>
     </div>
     <div class="main-header-information">
-      <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-about">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
       <p class="header-contacts">
-        <img src="img/icon-phone.svg">
-        <span class="phone">+7 (812) 555-05-55</span><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <div class="contacts">
+          <img src="img/icon-phone.svg">
+          +7 (812) 555-05-55<br>
+        </div>
+        <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <div class="header-user-menu">
         <a href="#" class="header-account-entry"><img src="img/icon-login.svg">Войти</a>
         <a href="#" class="header-account-reg">Регистрация</a>
       </div>
     </div>
-    <nav class="header-navigation" style="background-color: #32425c">
+    <nav class="header-navigation">
       <ul class="site-navigation">
         <li><a>Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -73,7 +82,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="footer-complex" style="background-color: #32425c">
+    <div class="footer-complex">
       <p>
         <img src="img/footer-logo.png" alt="Логотип компании">
       </p>
@@ -95,8 +104,8 @@
         <li><a href="#">Спецпредложения</a></li>
       </ul>
     </div>
-    <div class="footer-bottom" style="background-color: #293449">
-      <p class="footer-copyright">
+    <div class="footer-bottom">
+      <p>
         © 2010–2017 Компания «Техномарт»<br>
         Все права защищены
       </p>
@@ -109,11 +118,11 @@
       </div>
       <p>
         Обратная связь:<br>
-        <a href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
+        <a href="mailto:mail@htmlacademy.ru"><span class="contacts-mail">mail@htmlacademy.ru</span></a>
       </p>
       <p>
         Разработано -<br>
-        <a href="https://htmlacademy.ru"><span>htmlacademy.ru</span></a>
+        <a href="https://htmlacademy.ru"><span class="contacts-site">htmlacademy.ru</span></a>
       </p>
     </div>
   </footer>
@@ -124,10 +133,12 @@
         <label>Ваше имя:<input class="form-name" type="text" name="name" placeholder="Имя Фамилия" required></label>
       </p>
       <p>
-        <label>Ваш e-mail:<input class="form-email" type="email" name="email" placeholder="email@example.com" required></label>
+        <label>Ваш e-mail:<input class="form-email" type="email" name="email" placeholder="email@example.com"
+            required></label>
       </p>
       <p>
-        <label>Текст письма<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме" required></textarea></label>
+        <label>Текст письма<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме"
+            required></textarea></label>
       </p>
       <button type="submit" class="button">Отправить</button>
     </form>
