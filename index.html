@@ -14,35 +14,41 @@
 
 <body>
   <header class="main-header">
-    <div class="user-navigation">
-      <a class="main-header-logo">
-        <img src="img/index-logo.png" alt="Company logo">
-      </a>
-      <form action="/echo" method="post">
+    <div class="user-navigation-wrapper">
+      <div class="user-navigation container">
+        <a class="main-header-logo" href="">
+        <div class="header-logo">  
+          <p>Техномарт</p>        
+      </div>
+    </a>
+      <form action="/echo" method="post" class="header-search-form">
         <label for="main-header-search" class="visually-hidden">Название товара</label>
-        <img src="img/icon-search.svg">
-        <input type="search" name="main-header-search" id="main-header-search" class="header-search"
-          placeholder="Поиск:">
+         <div class="header-search">
+          <img src="img/icon-search1.svg" alt="">
+          <input type="search" name="main-header-search" id="main-header-search" class="header-search"
+            placeholder="Поиск:">
+        </div>
       </form>
-      <a class="header-bookmark" href="#"><img src="img/icon-bookmark.svg">Закладки: 0</a>
-      <a class="header-cart" href="#"><img src="img/cart-icon.svg">Корзина: 0</a>
+      <a class="header-bookmark" href="#"><img src="img/icon-bookmark.svg" alt="">Закладки: 0</a>
+      <a class="header-cart" href="#"><img src="img/cart-icon.svg" alt="">Корзина: 0</a>
       <a class="header-checkout" href="#">Оформить заказ</a>
+      </div>
     </div>
-    <div class="main-header-information">
+    <div class="main-header-information container">
       <p class="header-about">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-      <p class="header-contacts">
+      <div class="header-contacts">
         <div class="contacts">
-          <img src="img/icon-phone.svg">
+          <img src="img/icon-phone.svg" alt="">
           +7 (812) 555-05-55<br>
         </div>
         <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-      </p>
-      <div class="header-user-menu">
-        <a href="#" class="header-account-entry"><img src="img/icon-login.svg">Войти</a>
-        <a href="#" class="header-account-reg">Регистрация</a>
       </div>
+      <div class="header-user-menu">
+        <a href="#" class="header-account-entry"><img src="img/icon-login.svg" alt="">Войти</a>
+        <a href="#" class="header-account-reg">Регистрация</a>
+      </div> 
     </div>
-    <nav class="header-navigation">
+    <nav class="header-navigation container">
       <ul class="site-navigation">
         <li><a>Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -55,6 +61,7 @@
     </nav>
   </header>
   <main class="container">
+    <div class="main-about-company">
     <section class="main-about">
       <h3>Компания «Техномарт»</h3>
       <p class="about-description">
@@ -73,23 +80,26 @@
     <section class="main-contacts">
       <h3>Контакты</h3>
       <p class="about-description">
-        Вы можете забрать товар сами, заехав в наш офис:
+        Вы можете забрать товар сами,<br>заехав в наш офис:
       </p>
       <a href="map.html">
         <img src="img/map.png" alt="Адрес компании г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </a>
       <a class="button" href="feedback.html">Заблудились? Напишите нам!</a>
     </section>
+  </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-complex">
-      <p>
-        <img src="img/footer-logo.png" alt="Логотип компании">
-      </p>
+    <div class="footer-complex-wrapper">
+    <div class="footer-complex container">
+      <div class="logo-address">
+        <img src="img/footer-logo.png" alt="Логотип компании" width="220" height="68">
       <p class="footer-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
       </p>
+    </div>
+    <div class="list-wrapper">
       <ul class="footer-complex-list list-first">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
@@ -104,16 +114,19 @@
         <li><a href="#">Спецпредложения</a></li>
       </ul>
     </div>
-    <div class="footer-bottom">
+    </div>
+  </div>
+  <div class="footer-bottom-wrapper">
+    <div class="footer-bottom container">
       <p>
         © 2010–2017 Компания «Техномарт»<br>
         Все права защищены
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/vk-icon.svg">Вконтакте</a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg">Фейсбук</a></li>
-          <li><a class="social-button" href="#"><img src="img/insta-icon.svg">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
         </ul>
       </div>
       <p>
@@ -125,22 +138,24 @@
         <a href="https://htmlacademy.ru"><span class="contacts-site">htmlacademy.ru</span></a>
       </p>
     </div>
+  </div>
   </footer>
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Отправить письмо</h2>
+    <div class="form-container">
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p>
+      <div class="user-data">
         <label>Ваше имя:<input class="form-name" type="text" name="name" placeholder="Имя Фамилия" required></label>
-      </p>
-      <p>
         <label>Ваш e-mail:<input class="form-email" type="email" name="email" placeholder="email@example.com"
             required></label>
-      </p>
-      <p>
-        <label>Текст письма<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме"
+    </div>
+    <div class="form-text-wrapper">
+        <label>Текст письма:<textarea class="form-text" name="text" rows="5" placeholder="В свободной форме"
             required></textarea></label>
-      </p>
+    </div>
+    <div class="form-button-wrapper">
       <button type="submit" class="button">Отправить</button>
+      </div>
     </form>
   </section>
   <section class="modal modal-map">
