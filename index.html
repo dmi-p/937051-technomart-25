@@ -12,11 +12,11 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-page">
   <header class="main-header">
     <div class="user-navigation-wrapper">
       <div class="user-navigation container">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo" href="index.html">
           <div class="header-logo">
             <p>Техномарт</p>
           </div>
@@ -33,8 +33,8 @@
                 </g>
                 <g>
                   <path fill="#231F20" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
-            C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
-            C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
+        C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+        C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
                 </g>
               </svg>
             </div>
@@ -68,7 +68,7 @@
       <div class="header-contacts">
         <div class="contacts">
           <img src="img/icon-phone.svg" alt="" width="19" height="19">
-          +7 (812) 555-05-55<br>
+          <span class="header-number">+7 (812) 555-05-55<br></span>
         </div>
         <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </div>
@@ -94,7 +94,7 @@
     </div>
     <nav class="header-navigation container">
       <ul class="site-navigation">
-        <li><a href="#">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Новости</a></li>
@@ -111,8 +111,10 @@
         <div class="menu-row-1">
           <div class="main-menu-item menu-item-materials">
             <div class="flag flag-new">Новинка</div>
+            <div class="main-menu-item-l">
             <h3>Материалы</h3>
               <a href="#" class="main-menu-button">На любой вкус</a>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="65"
               viewBox="0 0 44 65">
               <g>
@@ -124,10 +126,12 @@
             </svg>
           </div>
           <div class="main-menu-item menu-item-tool">
+            <div class="main-menu-item-l">
             <h3>Инструмент</h3>
             <a href="#" class="main-menu-button">
               На все случаи
             </a>
+          </div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="61"
               viewBox="0 0 75 61">
               <g>
@@ -139,10 +143,12 @@
             </svg>
           </div>
           <div class="main-menu-item menu-item-mech">
+              <div class="main-menu-item-l">
             <h3>Техника</h3>
             <a href="#" class="main-menu-button">
               Для стройки
             </a>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="62"
               viewBox="0 0 78 62">
               <g>
@@ -179,10 +185,12 @@
           </div>
           <div class="menu-row-2-sub">
             <div class="main-menu-item menu-item-discount">
+                <div class="main-menu-item-l">
               <h3>Скидки 50%</h3>
               <a href="#" class="main-menu-button">
                 На 350 товаров
               </a>
+              </div>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="72"
                 viewBox="0 0 59 72">
                 <g>
@@ -194,10 +202,12 @@
               </svg>
             </div>
             <div class="main-menu-item menu-item-delivery">
+                <div class="main-menu-item-l">
               <h3>Доставка</h3>
               <a href="#" class="main-menu-button">
                 Бесплатно
               </a>
+              </div>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="63"
                 viewBox="0 0 78 63">
                 <g>
@@ -236,7 +246,7 @@
             <div class="item-inactive">
               <img src="img/Perforator_4.jpg" alt="Bosch bfg 9000" width="218" height="170">
             </div>
-            <h3><a href="#" class="item-name">Перфоратор Bosch BFG 9000</a></h3>
+            <h3><a href="#" class="item-name">Перфоратор BOSCH<br>BFG 9000</a></h3>
             <div class="discount">
               32500 Р.
             </div>
@@ -262,7 +272,7 @@
             <div class="item-inactive">
               <img src="img/Perforator_1.jpg" alt="Bosch bfg 3000" width="218" height="170">
             </div>
-            <h3><a href="#" class="item-name">Перфоратор Bosch BFG 3000</a></h3>
+            <h3><a href="#" class="item-name">Перфоратор BOSCH<br>BFG 3000</a></h3>
             <div class="discount">
               22500 Р.
             </div>
@@ -288,7 +298,7 @@
             <div class="item-inactive">
               <img src="img/Perforator_2.jpg" alt="Bosch bfg 6000" width="218" height="170">
             </div>
-            <h3><a href="#" class="item-name">Перфоратор Bosch BFG 6000</a></h3>
+            <h3><a href="#" class="item-name">Перфоратор BOSCH<br>BFG 6000</a></h3>
             <div class="discount">30500 Р.</div>
             <div class="cost">
               25500 Р.
@@ -313,7 +323,7 @@
             <div class="item-inactive">
               <img src="img/Perforator_1.jpg" alt="Bosch bfg 2000" width="218" height="170">
             </div>
-            <h3><a href="#" class="item-name">Перфоратор Bosch BFG 2000</a></h3>
+            <h3><a href="#" class="item-name">Перфоратор BOSCH<br>BFG 2000</a></h3>
             <div class="discount">
             </div>
             <div class="cost">
@@ -338,7 +348,7 @@
         <a href="#"><img src="img/DeWALT.png" alt="DEWALT" width="146" height="44"></a>
       </div>
       <div class="main-producers">
-        <a href="#"><img src="img/Интерскол.png" alt="ИНТЕРСКОЛ" width="200" height="88"></a>
+        <a href="#"><img src="img/Интерскол.png" class="interskol-image" alt="ИНТЕРСКОЛ" width="200" height="88"></a>
       </div>
       <div class="main-producers">
         <a href="#"><img src="img/Hitachi.png" alt="HITACHI" width="169" height="31"></a>
@@ -393,12 +403,12 @@
     <div class="main-about-company">
       <section class="main-about">
         <h3>Компания «Техномарт»</h3>
-        <p class="about-description">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах.<br><br>
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
+        <div class="about-description">
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+            равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:</p>
+        </div>
         <ul class="about-description-companies">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
@@ -408,9 +418,9 @@
       </section>
       <section class="main-contacts">
         <h3>Контакты</h3>
-        <p class="about-description">
-          Вы можете забрать товар сами,<br>заехав в наш офис:
-        </p>
+        <div class="about-description">
+          <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+        </div>
         <a href="map.html" class="button-map">
           <img src="img/map.png" alt="Адрес компании г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
         </a>
@@ -500,6 +510,7 @@
             </li>
           </ul>
         </div>
+        <div class="footer-bottom-other">
         <div class="mailto">
           Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru"><span class="contacts-mail">mail@htmlacademy.ru</span></a>
@@ -509,6 +520,7 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="contacts-site">htmlacademy.ru</span></a>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <section class="modal modal-feedback">
@@ -677,9 +689,11 @@
 
 
   var linkBuy_main = document.querySelectorAll(".item-buy");
+  var linkBookmark_main = document.querySelectorAll(".item-mark");
   var modalPurchase_main = document.querySelector(".modal-purchase");
   var modalClose_main = modalPurchase_main.querySelector(".modal-close");
   var cart_main = document.querySelector(".header-cart");
+  var bookmark_main = document.querySelector(".header-bookmark");
 
   for (var i = 0; i < linkBuy_main.length; i++) {
     linkBuy_main[i].addEventListener("click", function (evt) {
@@ -687,6 +701,13 @@
     modalPurchase_main.classList.add("modal-show");
     cart_main.classList.add("header-cart-full");
   });
+  }
+
+  for (var i = 0; i < linkBookmark_main.length; i++) {
+      linkBookmark_main[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      bookmark_main.classList.add("header-cart-full");
+    });
   }
 
   modalClose_main.addEventListener("click", function (evt) {
