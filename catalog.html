@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -460,6 +460,7 @@
       </ul>
     </div>
     <div class="pre-footer">
+        <div class="container">
       <h3>Пара слов о перфораторах</h3>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.
@@ -467,6 +468,7 @@
         дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
         будут совмещены отбойный молоток и ударная дрель.</p>
     </div>
+  </div>
   </main>
   <footer class="main-footer">
     <div class="footer-complex-wrapper">
@@ -604,42 +606,7 @@
       <button class="modal-close" type="button">Закрыть</button>
     </div>
   </section>
-  <script>
-  var linkBuy_main = document.querySelectorAll(".item-buy");
-  var linkBookmark_main = document.querySelectorAll(".item-mark");
-  var modalPurchase_main = document.querySelector(".modal-purchase");
-  var modalClose_main = modalPurchase_main.querySelector(".modal-close");
-  var cart_main = document.querySelector(".header-cart");
-  var bookmark_main = document.querySelector(".header-bookmark");
-
-  for (var i = 0; i < linkBuy_main.length; i++) {
-    linkBuy_main[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modalPurchase_main.classList.add("modal-show");
-    cart_main.classList.add("header-cart-full");
-  });
-  }
-
-  for (var i = 0; i < linkBookmark_main.length; i++) {
-      linkBookmark_main[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      bookmark_main.classList.add("header-cart-full");
-    });
-  }
-    modalClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalPurchase.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (modalPurchase.classList.contains("modal-show")) {
-          modalPurchase.classList.remove("modal-show");
-        }
-      }
-    });
-  </script>
+  <script src="js/script2.js"></script>
 </body>
 
 </html>
