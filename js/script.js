@@ -15,7 +15,7 @@ try {
   isStorageSupport = false;
 }
 
-if ((link) == "") {
+if ((link) !== null) {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
@@ -73,7 +73,7 @@ var sliderPerforator = document.querySelector(".slider-perforator");
 var sliderRadio1 = document.querySelector(".slider-radio-1");
 var sliderRadio2 = document.querySelector(".slider-radio-2");
 
-if ((sliderDrill) == "") {
+if ((sliderDrill) !== null) {
 
 sliderRadio1.addEventListener("click", function (evt) {
   sliderPerforator.classList.remove("slider-item");
@@ -157,7 +157,7 @@ window.addEventListener("keydown", function (evt) {
 var sliderPrevious = document.querySelector(".slider-button-previous");
 var sliderNext = document.querySelector(".slider-button-next");
 
-if ((sliderPrevious) == "") {
+if ((sliderPrevious) !== null) {
 
 sliderPrevious.addEventListener("click", function (evt) {
   sliderPerforator.classList.remove("slider-item");

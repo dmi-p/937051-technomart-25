@@ -124,7 +124,7 @@
       margin: 20px 0;
     }
 
-    .menu-row-2 .menu-row-2-sub .main-menu-item:nth-child(2) {
+    .menu-row-2-sub .main-menu-item:nth-child(2) {
       margin-bottom: 0;
     }
 
@@ -394,6 +394,10 @@
       position: fixed;
       display: none;
       z-index: 20;
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
     }
 
     .modal-show {
@@ -718,11 +722,12 @@
     .header-about {
       font-size: 16px;
       line-height: 23px;
-      padding-left: 53px;
+      margin-left: 53px;
       color: #ee3643;
       font-weight: normal;
       font-style: italic;
       margin-top: 0;
+      width: 220px;
     }
 
     .visually-hidden {
@@ -748,7 +753,7 @@
     }
 
     .inner-page .header-contacts {
-      margin-left: 20px;
+      margin-left: -5px;
       margin-top: 2px;
     }
 
@@ -772,6 +777,7 @@
     .header-contacts {
       display: flex;
       flex-direction: column;
+      margin-left: -20px;
     }
 
     .address {
@@ -827,6 +833,7 @@
       display: flex;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
 
     .site-navigation :first-child a {
@@ -1743,6 +1750,7 @@
       margin-bottom: 75px;
       font-size: 13px;
       line-height: 24px;
+      width: 400px;
     }
 
     .main-service-slider {
@@ -1883,11 +1891,15 @@
     .catalog-items h3 {
       padding: 0;
       margin: 0;
+      overflow: hidden;
+      height: 45px;
     }
 
-    .main-page .catalog-item h3 {
+    .main-page .catalog-item-header {
       margin-top: 25px;
       margin-bottom: 0;
+      overflow: hidden;
+      height: 45px;
     }
 
     .catalog {
@@ -2251,6 +2263,7 @@
     }
 
     .catalog-item {
+      overflow: hidden;
       padding: 0;
       margin-left: -20px;
       margin-bottom: 20px;
@@ -2446,3 +2459,14 @@
       color: #000000;
       font-family: "PT Sans", Arial, sans-serif;
     }
+
+
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:50%; opacity:1}
+  }
+  
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:50%; opacity:1}
+  }
