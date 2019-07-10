@@ -397,7 +397,9 @@
       -webkit-animation-name: animatetop;
       -webkit-animation-duration: 0.4s;
       animation-name: animatetop;
-      animation-duration: 0.4s
+      animation-duration: 0.4s;
+      margin-top: -215px;
+      margin-left: -310px;
     }
 
     .modal-show {
@@ -431,6 +433,7 @@
 
     .modal-feedback {
       border-top: 7px solid #ee3643;
+      position: fixed;
       color: #000000;
       top: 50%;
       left: 50%;
@@ -442,8 +445,28 @@
       height: 430px;
       background-color: #fff;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+      z-index: 20;
     }
 
+    .modal-feedback-reserve {
+      position: static;
+      border-top: 7px solid #ee3643;
+      margin-top: 0;
+      margin-left: 310px;
+      display: block;
+      color: #000000;
+      font-size: 18px;
+      line-height: 18px;
+      width: 620px;
+      height: 430px;
+      background-color: #fff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+      z-index: 20;
+    }
+
+    .modal-feedback-close {
+      display: none;
+    }
 
     .feedback-wrapper {
       width: 100%;
@@ -453,7 +476,8 @@
       justify-content: space-between;
     }
 
-    .modal-feedback input {
+    .modal-feedback input,
+    .modal-feedback-reserve input {
       width: 195px;
       height: 35px;
     }
@@ -578,7 +602,8 @@
       text-decoration: none;
     }
 
-    .modal-feedback textarea {
+    .modal-feedback textarea,
+    .modal-feedback-reserve textarea {
       width: 435px;
       height: 94px;
     }
@@ -1823,9 +1848,12 @@
       font-size: 13px;
       line-height: 24px;
       display: flex;
+      width: 100%;
       margin-top: 0;
       padding-bottom: 50px;
       position: relative;
+      max-height: 230px;
+      overflow: hidden;
     }
 
     .filter-option input[type="radio"] {
@@ -1842,7 +1870,6 @@
       -webkit-appearance: none;
       -moz-appearance: none;
     }
-
 
     .service-slider-delivery {
       width: 100%;
@@ -2375,6 +2402,11 @@
       display: block;
       cursor: pointer;
       user-select: none;
+    }
+
+    .filter-option-check:focus+label,
+    .filter-option-radio:focus+label {
+      outline: 1px dotted #212121;
     }
 
     .filter-option-check+label::before {

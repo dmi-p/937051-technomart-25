@@ -5,10 +5,12 @@ var name = popup.querySelector(".form-name");
 var form = popup.querySelector(".feedback-form");
 var mail = popup.querySelector(".form-email");
 var text = popup.querySelector(".form-text");
-
+var popupReserve = document.querySelector(".modal-feedback-reserve");
 var isStorageSupport = true;
 var storage = "";
-
+if (popupReserve) {
+popupReserve.classList.add("modal-feedback-close");
+}
 try {
   storage = localStorage.getItem("mail");
 } catch (err) {
@@ -18,6 +20,7 @@ try {
 if ((link) !== null) {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popup.classList.add("modal-feedback");
   popup.classList.add("modal-show");
   name.focus();
 }); 
@@ -96,6 +99,10 @@ var sliderDelivery = document.querySelector(".service-slider-delivery");
 var sliderGuarantee = document.querySelector(".service-slider-guarantee");
 var sliderCredit = document.querySelector(".service-slider-credit");
 
+// sliderDelivery.classList.remove("slider-item");
+sliderGuarantee.classList.add("slider-item");
+sliderCredit.classList.add("slider-item");
+
 sliderDelivery_radio.addEventListener("click", function (evt) {
   sliderDelivery.classList.remove("slider-item");
   sliderGuarantee.classList.add("slider-item");
@@ -124,6 +131,7 @@ var modalClose_main = modalPurchase_main.querySelector(".modal-close");
 var cart_main = document.querySelector(".header-cart");
 var bookmark_main = document.querySelector(".header-bookmark");
 
+if (linkBuy_main) {
 
 for (var i = 0; i < linkBuy_main.length; i++) {
   linkBuy_main[i].addEventListener("click", function (evt) {
@@ -153,6 +161,7 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+}
 
 var sliderPrevious = document.querySelector(".slider-button-previous");
 var sliderNext = document.querySelector(".slider-button-next");
